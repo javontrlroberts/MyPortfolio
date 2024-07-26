@@ -1,0 +1,75 @@
+/* Custom Properties */
+
+:root {
+
+--clr-White: #ffffff;
+
+--clr-light-gray: #d6e2f0;
+--clr-grayish-blue: #68778d;
+--clr-dark-blue: #1f3251;
+
+--ff: "Outfit", sans-serif;
+--fs-body: 15px;
+--fw-400: 400;
+--fw-700: 700;
+
+}
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%; /* ensures image is responsive on all devices */
+}
+
+body {
+    font-family: var(--ff);
+    font-weight: var(--fw-400);
+    color: var(--clr-grayish-blue);
+    background: var(--clr-light-gray);
+}
+
+/* Typography */
+
+.title {
+    font-size: 20px;
+    font-weight: var(--fw-700);
+    color: var(--clr-dark-blue);
+    margin-bottom: 1rem;
+}
+
+.content {
+    margin-bottom: 1rem;
+}
+
+/* Layout */
+
+.wrapper {
+    display: flex;
+    align-items: center; /* centers div along the y-axis */
+    height: 100dvh;
+}
+
+/* Styles */
+
+.card {
+    max-width: 300px; /* max width will ensure the div is responsive on all devices */
+    margin-inline: auto; /* same as writing 'margin: 0 auto;' to center div horizontally */
+    background: var(--clr-White);
+    padding: 16px;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.qrImage {
+    margin-bottom: 1rem;
+    border-radius: 8px;
+}
